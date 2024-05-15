@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      Lorem ipsum dolor sic et non.
+      <nav>
+        <a href="#quote">Quote</a>
+        <a href="#list">List</a>
+        <a href="#images">Images</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+
+      <img
+        src="./images/sunset.jpg"
+        alt="Sunset"
+        id="sunset"
+        style="height: 450px; margin: auto; padding-block: 2rem"
+      />
+
+      <blockquote id="quote">
+        <q
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa
+          nostrum doloremque sed enim eum aliquam amet aspernatur consectetur
+          doloribus?</q
+        >
+      </blockquote>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic laudantium
+        ex ad dignissimos enim debitis. Culpa adipisci iure exercitationem
+        cumque.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+        repudiandae.
+      </p>
+
+      <ol id="list">
+        <li class="item">Lorem ipsum dolor</li>
+        <li class="item">Sit amet consectetur</li>
+        <li class="item">
+          Adipiscing elit
+          <ul>
+            <li>3.1 Mauris fermentum</li>
+            <li>3.2 Ut facilisis</li>
+            <li>3.3 Suspendisse potenti</li>
+            <li>3.4 Aliquam consequat</li>
+          </ul>
+        </li>
+        <li class="item">Vestibulum ante ipsum</li>
+        <li class="item">Primis in faucibus</li>
+      </ol>
+
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Dolore veniam quibusdam doloremque. Labore.</p>
+      <p>Laborum dolorem voluptas at dolores.</p>
+      <p>Eum aliquam ullam itaque totam!</p>
+
+      <section id="images">
+        <h2>Sic Et Non Dolores Lorem Ipsum</h2>
+        <div>
+          <img id="fox" src="./images/fox.jpg" alt="fox" />
+          <img id="tiger" src="./images/tiger.jpg" alt="Tiger" />
+          <img id="lion" src="./images/lion.jpg" alt="lion" />
+        </div>
+      </section>
+    </main>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+      perspiciatis aspernatur exercitationem ducimus fuga magni.
+    </p>
+    <p>
+      Suscipit officiis exercitationem maxime vero alias, ratione eius iste at
+      debitis sunt eum necessitatibus dolorem!
+    </p>
+
+    <script src="./app.js"></script>
+  </body>
+
+  <style>
+    * {
+      text-decoration: none;
+      color: inherit;
+      scroll-behavior: smooth;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 0.4rem;
+      display: block;
+      object-fit: cover;
+    }
+
+    section {
+      padding-block: 2rem;
+    }
+
+    section div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    #tiger {
+      grid-area: span 2;
+    }
+
+    html {
+      min-height: 200vh;
+    }
+
+    main {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    nav {
+      display: inline-flex;
+      align-items: center;
+      list-style-type: none;
+      gap: 2rem;
+      color: #fca;
+    }
+
+    body {
+      background-color: #0e1013;
+      color: #808284;
+      font-size: 1.3rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    h1 {
+      color: #fff;
+      padding: 0;
+      margin: 0;
+      margin-top: 2rem;
+    }
+
+    blockquote {
+      background-color: #000;
+      color: #fca;
+      padding: 0.5rem 1rem;
+      margin-block: 2rem;
+      border-radius: 0.8rem;
+      text-wrap: wrap;
+    }
+
+    q::before,
+    q::after {
+      color: #fff;
+    }
+  </style>
+</html>
