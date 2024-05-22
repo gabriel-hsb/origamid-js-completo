@@ -66,10 +66,11 @@ function stopTimer() {
 function resetTimer() {
   i = 0;
   timerText.innerHTML = 0;
+  userInput.value = 0;
 }
 
 function startTimer() {
-  if (userInput.value) {
+  if (userInput.value > 0) {
     btnStart.disabled = true;
     timer = setInterval(() => {
       timerText.innerText = i++;
