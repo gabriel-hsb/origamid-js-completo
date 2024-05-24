@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+  </style>
+  <body>
+    <form name="cep">
+      <label for="cep">Digite seu CEP</label>
+      <input min="0" type="number" name="cep" id="cep" required />
+      <button type="submit">Conferir meu endereço</button>
+    </form>
+
+    <p id="address"></p>
+
+    <hr />
+
+    <p id="btc"></p>
+    <button id="get-btc">Quando custa um Bitcoin?</button>
+
+    <hr />
+
+    <p id="joke"></p>
+    <button id="get-joke">Me conte uma piada do ChuckNorris</button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
